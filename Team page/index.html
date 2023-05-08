@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body class="bg-[#17213f] flex justify-center items-center min-h-screen">
+    <div id="cards-container"
+        class="container w-full max-w-[1000px] justify-center flex flex-wrap text-[#c9d1e5] gap-5">
+        <!-- CARD 1 -->
+        <div class="card bg-[#0f162b] w-[220px] rounded overflow-hidden max-h-[300px]">
+            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cG9ydHJhaXR8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                alt="" class="object-cover w-full h-[150px]">
+            <div class="flex flex-col p-4">
+                <h1 class="font-semibold">Bill Alvarado</h1>
+                <p class="text-xs">Digital product designer</p>
+                <span class="text-[0.6rem] my-4">Previously</span>
+                <span>
+                    <img src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png" class="w-[60px]" alt="">
+                </span>
+            </div>
+        </div>
+        <!-- CARD 2 -->
+        <div class="card bg-[#0f162b] w-[220px] rounded overflow-hidden max-h-[300px]">
+            <img src="https://images.unsplash.com/photo-1596217431227-472b0c00da7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHdvbWFuJTIwcG9ydHJhaXR8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                alt="" class=" object-cover w-full h-[150px]">
+            <div class="flex flex-col p-4">
+                <h1 class="font-semibold">Candice Copeland</h1>
+                <p class="text-xs">Software architect</p>
+                <span class="text-[0.6rem] my-4">Previously</span>
+                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_537/v1626992608/assets/3f/e2a4f5-9678-4c85-ac55-605e1a81dd37/original/UberLogo_D.png"
+                    class="w-[60px]" alt="">
+            </div>
+        </div>
+        <!-- CARD 3 -->
+        <div class="card bg-[#0f162b] w-[220px] rounded overflow-hidden h-[300px]">
+            <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fHBvcnRyYWl0fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+                alt="" class="object-cover w-full h-[150px]">
+            <div class="flex flex-col p-4">
+                <h1 class="font-semibold">Leo Harvey</h1>
+                <p class="text-xs">Digital product designer</p>
+                <span class="text-[0.6rem] my-4">Previously</span>
+
+                <img width="50px"
+                    src="https://seekvectorlogo.com/wp-content/uploads/2022/02/intercom-vector-logo-2022.png" alt="">
+
+            </div>
+        </div>
+        <!-- CARD 4 -->
+        <div class="card newCard w-[220px] border-2 border-[#0f162b] rounded overflow-hidden h-[300px]">
+            <div class="addCard flex flex-col justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="44" height="44"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#a1aed2" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                </svg>
+                <span>Add more</span>
+            </div>
+        </div>
+        <!-- MODAL -->
+        <!-- Trebuie sa fac formularul asta sa se deschida cu modalul, atunci cand se apasa pe Add more -->
+        <form action="" class="flex flex-col gap-[20px] items-center">
+            <div class="">
+                <p class="text-[13px]">User image</p>
+                <input type="text"
+                    class="outline-none my-[10px] text-[#222] border-2 border-solid border-[#97ADBB] bg-[#F4F8FB] p-[2px]"
+                    id="image">
+            </div>
+            <div class="">
+                <p class="text-[13px]">Name</p>
+                <input type="text"
+                    class="outline-none my-[10px] text-[#222] border-2 border-solid border-[#97ADBB] bg-[#F4F8FB] p-[2px]"
+                    id="name">
+            </div>
+            <div class="">
+                <p class="text-[13px]">Proffesion</p>
+                <input type="text"
+                    class="outline-none my-[10px] text-[#222] border-2 border-solid border-[#97ADBB] bg-[#F4F8FB] p-[2px]"
+                    id="job">
+            </div>
+            <div class="">
+                <p class="text-[13px]">Previous job company image</p>
+                <input type="text"
+                    class="outline-none my-[10px] text-[#222] border-2 border-solid border-[#97ADBB] bg-[#F4F8FB] p-[2px]"
+                    id="prevJob">
+            </div>
+            <button type="submit"
+                class="text-[14px] border-2 border-solid border-white rounded-md px-[10px] py-[5px] hover:bg-white hover:text-[#222] transition-all"
+                id="submitBtn">Submit</button>
+        </form>
+
+        <section class="modal hiddenM box-border">
+            <img src="" alt="" class="object-cover w-full h-[150px]">
+            <div class="flex flex-col p-4">
+                <h1 class="font-semibold"></h1>
+                <p class="text-xs"></p>
+                <span class="text-[0.6rem] my-4">Previously</span>
+                <span>
+                    <img src="" class="w-[60px]" alt="">
+                </span>
+            </div>
+            <button class="btn mt-6">Back to Shopping</button>
+        </section>
+        <div class="overlay hiddenM"></div>
+    </div>
+
+</body>
+
+</html>

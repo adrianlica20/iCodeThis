@@ -1,0 +1,12 @@
+span {
+  transition: all 0.1s ease-in;
+  background-color: currentColor;
+}
+
+span:hover {
+  transform: scale(1.02);
+}
+
+span:active {
+  box-shadow: inset 0 0 5px rgba(119, 142, 156, 0.3);
+}

@@ -1,0 +1,32 @@
+/* .container::before {
+  content: '';
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background-color: rgba(72, 55, 87, 0.8);
+  box-shadow: -140px -140px 200px 150px rgba(72, 55, 87, 0.8);
+  position: absolute;
+  bottom: -510px;
+  right: -300px;
+  opacity: 0.6;
+  z-index: -1;
+} */
+
+li {
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+li:hover {
+  background: linear-gradient(rgb(15, 33, 53), rgb(15, 33, 53)) padding-box,
+    linear-gradient(to top right, rgb(116, 75, 141), rgb(193, 57, 131))
+      border-box;
+  color: rgb(202, 68, 134);
+}
+
+.active {
+  background: linear-gradient(rgb(15, 33, 53), rgb(15, 33, 53)) padding-box,
+    linear-gradient(to top right, rgb(116, 75, 141), rgb(193, 57, 131))
+      border-box;
+  color: rgb(202, 68, 134);
+}

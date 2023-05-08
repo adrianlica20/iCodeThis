@@ -1,0 +1,35 @@
+.main::before {
+  content: "";
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #eaedf8;
+  top: -80px;
+  left: -80px;
+  z-index: -1;
+}
+
+.main::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #edf0f8;
+  bottom: -60px;
+  right: -60px;
+  z-index: -1;
+}
+
+.qna-container:hover {
+  box-shadow: 0 4px 5px #edf0f8;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .main::after,
+  .main::before {
+    display: none;
+  }
+}

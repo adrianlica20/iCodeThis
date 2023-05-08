@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Cards 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container w-full h-screen mx-auto relative bg-[#f7f8fc]">
+    <!-- Card 1 -->
+    <div
+        class="flex flex-col-reverse w-[27rem] mx-auto mt-5 bg-white rounded-md overflow-hidden shadow-md transition ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:cursor-pointer duration-200 sm:w-[15rem] sm:flex-col sm:mt-24">
+        <div class="flex-flex-col p-5">
+            <p class="text-[0.6rem] text-[#8c92a6]">December 17, 2019 &bull; 2 comments</p>
+            <h1 class="text-sm font-bold mt-2 mb-1">Why is the Tesla Cybertruck designed the way it is?</h1>
+            <span class="author text-[0.7rem] my-4">By <a class="text-blue-800" href="#">Lewis Daniels</a></span>
+        </div>
+        <img class="h-40 object-cover"
+            src="https://images.unsplash.com/photo-1600718042170-36ac0c42e203?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHBpY2t1cCUyMHRydWNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+            alt="">
+    </div>
+
+    <div class="flex-col container w-full mx-auto flex justify-center items-center gap-y-5 sm:gap-x-5
+    mt-5 sm:flex-row sm:items-start">
+        <!-- Card 2 -->
+        <div
+            class="flex flex-col w-[27rem] mx-auto bg-white rounded-md overflow-hidden shadow-md transition ease-in-out sm:hover:rotate-1 hover:scale-105 hover:shadow-2xl hover:cursor-pointer duration-200 sm:mx-0">
+            <div class="relative">
+                <img class="h-36 w-full object-cover"
+                    src="https://images.unsplash.com/photo-1604156788856-2ce5f2171cce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="">
+                <span
+                    class="category text-[0.6rem] absolute top-3 right-3 bg-[#d4c9d6] rounded-full px-2">POPULAR</span>
+            </div>
+            <div class="flex-flex-col p-5 w-11/12">
+                <h2 class="font-bold text-md">How To Keep Going When You Don't Know What's Next</h2>
+                <p class="text-xs mt-2">
+                    B - Believe in yourself and in what you can do. Believe in your possibilities and your dreams. Every
+                    advancement of humankind haas taken place because someone believed in themselves.
+                </p>
+                <div class="author flex mt-4">
+                    <img class="w-[2rem] h-[2rem] object-cover rounded-full"
+                        src="https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+                        alt="">
+                    <div class="authorDetails flex flex-col ml-1">
+                        <span class="font-bold text-xs">
+                            Jerome Walton
+                        </span>
+                        <span class="text-[0.6rem] text-[#8c92a6]">
+                            Yesterday
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+            class="flex flex-col w-[27rem] mx-auto h-fit bg-white rounded-md overflow-hidden shadow-md transition ease-in-out sm:hover:-rotate-1 hover:scale-105 hover:shadow-2xl hover:cursor-pointer duration-200 sm:w-[14rem] sm:mx-0">
+            <div class="relative">
+                <img class="h-28 w-full object-cover"
+                    src="https://images.unsplash.com/photo-1532455935509-eb76842cee50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fHNreWxpbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60"
+                    alt="">
+                <span
+                    class="category text-[0.6rem] text-white absolute top-3 left-3 bg-[#d4c9d6] rounded-full px-2">DESIGN</span>
+            </div>
+            <div class="flex-flex-col p-5">
+                <h2 class="text-sm font-bold mt-0 mb-1">10 Rules of Dashboard Design</h2>
+                <span class="author text-[0.7rem] my-4">By <a class="text-blue-800" href="#">Lewis Daniels</a></span>
+                <p class="text-[0.6rem] text-[#8c92a6]">December 17, 2019 &bull; 2 comments</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

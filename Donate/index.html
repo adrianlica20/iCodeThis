@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-[#21213b] flex justify-center items-center min-h-screen">
+    <div class="max-w-3xl flex space-x-6 bg-[#2f2f4f] p-6 rounded-lg">
+        <div class="text-white w-1/2 space-y-3">
+            <h1 class="text-2xl font-semibold">Help us do more</h1>
+            <p>We'll get right to the point: we're asking you to support us. We're a nonprofit that relies on support
+                from people like you. If everyone reading this gives $10 monthly, we can thrive for years.</p>
+        </div>
+
+        <div class="w-1/2 text-white">
+            <!-- Heading & Toggle Plans -->
+            <div class="flex flex-col gap-y-1">
+                <span class="text-[0.6rem] font-semibold">Select gift frequency</span>
+                <div class="toggle-container bg-[#21213b] p-2 flex gap-x-2 items-center rounded-full relative w-44">
+                    <div id="selected" class="bg-[#2f2f4f] absolute left- top-2 w-1/2 rounded-full h-6"></div>
+                    <div class="w-1/2 z-10 flex justify-center items-center p-1 px-2 h-full w-full rounded-full">
+                        <input type="radio" id="monthly" name="pricing-plan" value="monthly" />
+                        <label for="monthly"
+                            class="monthly-label text-[0.6rem] text-center font-semibold transition hover:cursor-pointer">Monthly</label>
+                    </div>
+                    <div class="w-1/2 z-10 flex justify-center items-center p-1 px-2 h-full w-full rounded-full">
+                        <input type="radio" id="yearly" name="pricing-plan" value="yearly" />
+                        <label for="yearly"
+                            class="yearly-label text-[0.6rem] text-center font-semibold transition hover:cursor-pointer">Yearly</label>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <span>Select amount (in US dollar)</span>
+
+                <div>
+                    <input type="radio" id="10" name="amount" value="10">
+                    <label for="huey">$10</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="20" name="amount" value="20">
+                    <label for="dewey">$20</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="30" name="amount" value="30" checked>
+                    <label for="louie">$30</label>
+                </div>
+                <div>
+                    <input type="radio" id="40" name="amount" value="40">
+                    <label for="louie">$40</label>
+                </div>
+                <div>
+                    <input type="radio" id="other" name="amount" value="other">
+                    <label for="louie">Other</label>
+                </div>
+                </fieldset>
+            </div>
+        </div>
+</body>
+
+</html>

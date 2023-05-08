@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Select</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-[#1a182d] flex justify-center items-center min-h-screen">
+    <div class="bg-[#141324] flex flex-col items-center gap-y-8 p-6 md:p-14">
+        <h1 class="text-center text-[#d1d5e5] font-bold text-2xl md:text-3xl">Who is playing now?</h1>
+
+        <div class="users-container flex justify-center gap-6 flex-wrap">
+            <!-- User 1 -->
+            <div
+                class="user-card flex flex-col items-center gap-y-3 p-6 bg-[#1a182d] rounded-lg w-36 h-48 transition hover:bg-[#242141] hover:cursor-pointer hover:scale-110">
+                <img class="w-24 h-24 rounded-full"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Circle-icons-rocket.svg/1200px-Circle-icons-rocket.svg.png"
+                    alt="">
+                <h2 class="text-md text-[#d1d5e5] w-max md:font-semibold">tika-m</h2>
+            </div>
+            <!-- User 2 -->
+            <div
+                class="user-card flex flex-col items-center gap-y-3 p-6 bg-[#1a182d] rounded-lg w-36 h-48 transition hover:cursor-pointer hover:bg-[#242141] hover:scale-110">
+                <img class="w-24 h-24 rounded-full"
+                    src="https://st2.depositphotos.com/1001248/8596/v/600/depositphotos_85969388-stock-illustration-drum-icon.jpg"
+                    alt="">
+                <h2 class="text-md text-[#d1d5e5] w-max md:font-semibold md:text-lg">garlic-naan</h2>
+            </div>
+            <!-- New User -->
+            <div
+                class="new-user-card user-card flex flex-col items-center gap-y-3 p-6 bg-[#1a182d] rounded-lg justify-center w-36 h-48 transition hover:cursor-pointer hover:scale-110 hover:bg-[#242141]">
+                <div class="plus-wrapper border-2 border-[#1c3048] rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="30"
+                        height="30" viewBox="0 0 24 24" stroke-width="2" stroke="#538fcf" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 5l0 14"></path>
+                        <path d="M5 12l14 0"></path>
+                    </svg>
+                </div>
+                <h2 class="new-user-display text-[#538fcf] w-max md:font-semibold">Add user</h2>
+            </div>
+        </div>
+        <button
+            class="text-[#5492d1] font-semibold text-sm border border-[#1c3048] rounded-full p-1.5 px-5 transition hover:border-[#5492d1] hover:text-[#d1d5e5] hover:bg-[#242141] md:p-2 md:px-6 md:text-lg">Manage
+            users</button>
+    </div>
+
+    <section
+        class="modal hiddenM box-border flex flex-col items-center gap-y-3 bg-[#1a182d] rounded-lg py-5 w-full max-w-[50rem] border-2 border-[#1c3048]">
+        <h3 class="titleMessage text-[#5492d1] tracking-wider font-bold text-xl">Welcome!</h3>
+        <small class="text-lg text-white">Create a new user:</small>
+        <form action="" class="flex flex-col gap-y-2">
+            <div class="flex justify-between gap-x-2">
+                <label for="add-new-user" class="text-white">Username:</label>
+                <input type="text" id="add-new-user">
+            </div>
+            <div class="flex justify-between gap-x-2">
+                <label for="add-profile-pic" class="text-white">Profile picture:</label>
+                <input type="text" id="add-profile-pic">
+            </div>
+        </form>
+        <div>
+        </div>
+        <button
+            class="btn text-[#5492d1] text-sm border border-[#1c3048] rounded p-1.5 px-5 transition hover:border-[#5492d1] hover:text-[#d1d5e5] hover:bg-[#242141] md:p-2 md:px-6 md:text-lg">Confirm</button>
+    </section>
+    <div class="overlay hiddenM"></div>
+</body>
+
+</html>

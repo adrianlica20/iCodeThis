@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-[#1b3146] flex flex-col justify-center items-center min-h-screen">
+    <div
+        class="bg-[#0b2136] max-w-4xl container px-3 box-border flex flex-col items-center justify-between shadow-xl sm:flex-row sm:px-8">
+        <button id="previous" class=" text-[#bc427f] text-xl transition-all hover:scale-125">Prev</button>
+        <ul class="flex flex-wrap items-center justify-center space-x-2 p-2 text-[#7090a5] max-w-max">
+            <li class="text-lg flex justify-center items-center p-2 w-8 h-8 md:w-12 md:h-12 md:text-2xl"><a
+                    href="#">1</a></li>
+            <li class="text-lg flex justify-center items-center p-2 w-8 h-8 md:w-12 md:h-12 md:text-2xl"><a
+                    href="#">2</a></li>
+            <li class="text-lg flex justify-center items-center p-2 w-8 h-8 md:w-12 md:h-12 md:text-2xl"><a
+                    href="#">3</a></li>
+            <li class="text-lg flex justify-center items-center p-2 w-8 h-8 md:w-12 md:h-12 md:text-2xl"><a
+                    href="#">...</a></li>
+            <li class="text-lg flex justify-center items-center p-2 w-8 h-8 md:w-12 md:h-12 md:text-2xl"><a
+                    href="#">8</a></li>
+            <li class="active text-lg flex justify-center items-center p-2 w-8 h-8 md:w-12 md:h-12 md:text-2xl"><a
+                    href="#">9</a></li>
+            <li class="text-lg flex justify-center items-center p-2 w-8 h-8 md:w-12 md:h-12 md:text-2xl"><a
+                    href="#">11</a></li>
+            <li class="text-lg flex justify-center items-center p-2 w-8 h-8 md:w-12 md:h-12 md:text-2xl"><a
+                    href="#">12</a></li>
+            <li class="text-lg flex justify-center items-center p-2 w-8 h-8 md:w-12 md:h-12 md:text-2xl"><a
+                    href="#">13</a></li>
+            <li class="text-lg flex justify-center items-center p-2 w-8 h-8 md:w-12 md:h-12 md:text-2xl"><a
+                    href="#">14</a></li>
+        </ul>
+        <button id="previous" class=" text-[#bc427f] text-xl transition-all hover:scale-125">Next</button>
+    </div>
+    <span class="text-[#456679] font-semibold mt-4 text-md z-10 md:text-xl">- 1477 items -</span>
+</body>
+
+</html>

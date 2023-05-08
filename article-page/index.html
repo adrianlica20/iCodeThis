@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container mx-auto">
+
+    <!-- Navbar 1 -->
+    <navbar class="w-4/5 container flex mx-auto md:w-full sm:border-b-2">
+        <div class="flex items-center justify-between w-full">
+            <div class="hidden sm:flex space-x-6">
+                <a href="#"
+                    class="text-sm underline-offset-4 decoration-2 transition-all hover:scale-105 hover:underline">Product</a>
+                <a href="#"
+                    class="text-sm underline-offset-4 decoration-2 transition-all hover:scale-105 hover:underline">Pricing</a>
+                <a href="#"
+                    class="text-sm underline-offset-4 decoration-2 transition-all hover:scale-105 hover:underline">Use
+                    Cases</a>
+                <a href="#"
+                    class="text-sm underline-offset-4 decoration-2 transition-all hover:scale-105 hover:underline">Blog</a>
+            </div>
+            <div class="flex my-3 justify-end w-full space-x-3 sm:w-max sm:justify-start sm:p-3 sm:mx-0 sm:px-0">
+                <a href="#"
+                    class="p-1 px-5 text-[#0e1731] text-sm bg-white border border-[#0e1731] rounded-full baseline hover:bg-[#0e1731] hover:text-white">Log
+                    In</a>
+                <a href="#"
+                    class="p-1 px-5 text-white text-sm bg-[#0e1731] border border-[#0e1731] rounded-full baseline hover:bg-white hover:text-[#0e1731]">Get
+                    Started</a>
+            </div>
+        </div>
+    </navbar>
+
+    <!-- Navbar 2 -->
+    <navbar class="w-4/5 flex items-center justify-between mx-auto mt-4 md:w-full">
+        <div class="hidden space-x-6 inline-block sm:flex">
+            <a href="#"
+                class="text-sm underline-offset-4 decoration-2 transition-all hover:scale-105 hover:underline">Project</a>
+            <a href="#"
+                class="text-sm underline-offset-4 decoration-2 transition-all hover:scale-105 hover:underline">Remote</a>
+            <a href="#"
+                class="text-sm underline-offset-4 decoration-2 transition-all hover:scale-105 hover:underline">Teamwork</a>
+            <a href="#"
+                class="text-sm underline-offset-4 decoration-2 transition-all hover:scale-105 hover:underline">Productivity</a>
+            <a href="#"
+                class="text-sm underline-offset-4 decoration-2 transition-all hover:scale-105 hover:underline">Marketing</a>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="hidden w-4 h-4 hover:cursor-pointer hover:scale-125 sm:inline-block">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+        </svg>
+        <!-- Search bar for smaller screens -->
+        <input type="text" placeholder="Quick search..."
+            class="border-2 rounded-full w-full text-xs p-2 pl-4 sm:hidden">
+    </navbar>
+
+    <!-- Main section -->
+    <h1 class="text-center text-2xl font-bold mb-4 mt-14 sm:text-4xl md:text-left">Productivity</h1>
+    <main class="flex mx-auto w-4/5 flex-col container gap-y-8 mb-8 md:gap-x-8 md:flex-row md:w-full">
+
+        <!-- Left container -->
+        <div class="container flex flex-col w-full md:w-2/4">
+            <img class=" w-full bg-cover bg-center"
+                src="https://images.unsplash.com/photo-1484856299450-fb14549bca50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1298&q=80"
+                alt="Picture of a winter road">
+            <h2 class="text-lg font-bold w-full mt-4 sm:text-2xl md:w-4/5">Little Things Do Make A Difference</h2>
+            <p class="text-xs mt-2 leading-5 w-full md:w-4/5">Why do you want to motivate yourself? Actually, just
+                answering that question fully can be one of the better ways to get your daily motivation.</p>
+            <div
+                class="flex self-end items-center mt-4 md:self-start transition-all hover:scale-105 hover:cursor-pointer">
+                <img class="portrait w-8 rounded-full"
+                    src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBvcnRyYWl0fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Author's portrait">
+                <span class="authorName text-xs ml-2">Kathryn Shelton</span>
+            </div>
+        </div>
+
+        <!-- Right container -->
+        <div class="flex flex-col gap-y-5 container w-full md:w-2/4">
+
+            <h3 class="text-md font-bold mb-3 sm:text-lg">Recent articles</h3>
+
+            <article class="flex">
+                <img class="w-1/4 mr-4"
+                    src="https://images.unsplash.com/photo-1503384191592-0f8a38e52f06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJ1aWxkaW5nc3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                <div class="descrText flex flex-col justify-center">
+                    <h4 class="text-md font-bold leading-tight sm:text-lg hover:cursor-pointer hover:underline">Common
+                        Symbols And Their Meanings</h4>
+                    <div class="flex items-center mt-2 transition-all hover:translate-x-2 hover:cursor-pointer">
+                        <img class="portrait w-8 rounded-full"
+                            src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydHJhaXR8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="Author's portrait">
+                        <span class="authorName text-xs ml-2">Susie Russell</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="flex">
+                <img class="w-1/4 mr-4"
+                    src="https://images.unsplash.com/photo-1585399090149-de01d4c28e70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b2ZmaWNlfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                <div class="descrText flex flex-col justify-center">
+                    <h4 class="text-md font-bold leading-tight sm:text-lg hover:cursor-pointer hover:underline">Success
+                        Steps For Your Business</h4>
+                    <div class="flex items-center mt-2 transition-all hover:translate-x-2 hover:cursor-pointer">
+                        <img class="portrait w-8 rounded-full"
+                            src="https://images.unsplash.com/photo-1485893226355-9a1c32a0c81e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHBvcnRyYWl0fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="Author's portrait">
+                        <span class="authorName text-xs ml-2">Connor Parsons</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="flex">
+                <img class="w-1/4 mr-4"
+                    src="https://images.unsplash.com/photo-1617103539311-b92a6d2c0c1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2l0eXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+                <div class="descrText flex flex-col justify-center">
+                    <h4 class="text-md font-bold leading-tight sm:text-lg hover:cursor-pointer hover:underline">The
+                        Strenght Of Your Belief</h4>
+                    <div class="flex items-center mt-2 transition-all hover:translate-x-2 hover:cursor-pointer">
+                        <img class="portrait w-8 rounded-full"
+                            src="https://images.unsplash.com/photo-1598641795816-a84ac9eac40c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fHBvcnRyYWl0fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                            alt="Author's portrait">
+                        <span class="authorName text-xs ml-2">Jonathan Yates</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>

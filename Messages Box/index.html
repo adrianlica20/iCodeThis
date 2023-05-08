@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages Box</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="min-h-screen flex justify-center items-center bg-blue-400">
+
+    <section id="container"
+        class="bg-white rounded-lg p-5 shadow-2xl sepia-0 md:w-80 md:max-w-lg min-h-[13rem] max-h-[30rem] overflow-hidden">
+        <div class="flex justify-between items-center w-full border-b border-blue-200 pb-4">
+            <h1 class="font-semibold">Messages</h1>
+            <img class="w-8 h-8 transition hover:cursor-pointer hover:rotate-180"
+                src="https://img.icons8.com/?size=512&id=73FgXcRF4HNx&format=png" alt="settings wheel img">
+        </div>
+
+        <div class="relative flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-2" width="20" height="20" viewBox="0 0 24 24"
+                stroke-width="2" stroke="#4a90e2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                <path d="M21 21l-6 -6"></path>
+            </svg>
+            <input id="searchbar" type="search" spellcheck="false" placeholder="Search"
+                class="w-full bg-gray-100 p-2 my-3 pl-9 rounded text-blue-500 text-sm placeholder:text-xs placeholder:font-light focus:outline-blue-300">
+        </div>
+
+        <article id="messages" class="flex flex-col gap-3 overflow-y-scroll max-h-[20rem]">
+            <!-- MESSAGES -->
+        </article>
+
+        <button id="write-msg-btn"
+            class="bg-blue-500 rounded-full w-max shadow-lg p-2 shadow-blue-300 fixed right-5 bottom-5 text-white transition hover:bg-blue-400 hover:shadow-blue-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="" width="28" height="28" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 20l10 -10m0 -5v5h5m-9 -1v5h5m-9 -1v5h5m-5 -5l4 -4l4 -4"></path>
+                <path
+                    d="M19 10c.638 -.636 1 -1.515 1 -2.486a3.515 3.515 0 0 0 -3.517 -3.514c-.97 0 -1.847 .367 -2.483 1m-3 13l4 -4l4 -4">
+                </path>
+            </svg>
+        </button>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfdfdf;
+  font-family: 'Poppins', sans-serif;
+}
+
+.profile-card {
+  width: 100%;
+  height: 100%;
+  max-width: 65rem;
+  max-height: 29rem;
+  padding: 3rem;
+  background-color: #fffaf2;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 21px 33px lightgrey;
+  gap: 20px;
+}
+
+.profile-pic {
+  max-width: 7rem;
+  border-radius: 40%;
+}
+
+h1 {
+  margin-bottom: 0.7rem;
+  font-size: 1.6rem;
+}
+
+.username {
+  font-weight: 500;
+}
+
+.user-info p {
+  font-size: 1.2rem;
+  max-width: 65%;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials > div {
+  width: 4rem;
+  height: 4rem;
+  background-color: #fff;
+  border: 1px solid rgb(233, 233, 233);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  transition: transform 0.2s ease-in;
+}
+
+.socials > div:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 5px rgb(202, 202, 202);
+}
+
+.socials img {
+  max-width: 2rem;
+}
+
+.statistics {
+  flex: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.org-count {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 0.6rem;
+}
+
+.counter {
+  font-size: 1.1rem;
+  color: #464663;
+}
+
+.more-info {
+  max-width: 1.6rem;
+}
+
+.more-info:hover {
+  cursor: pointer;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  border: none;
+  background-color: #dfdfdf;
+  border-radius: 10px;
+  position: relative;
+}
+
+.progress-bar::after {
+  content: '';
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  background-color: #f17938;
+  border-radius: 10px 0 0 10px;
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.followers {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.follow-btn {
+  width: 12.2rem;
+  height: 3.5rem;
+  background-color: #13143b;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: width 0.3s ease-in-out;
+}
+
+.follow-btn:hover {
+  cursor: pointer;
+  width: 10rem;
+}

@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../Progress bar"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Steps"
+  }
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f5ff;
+}
+
+.container {
+  width: 90%;
+  max-width: 70rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.title button {
+  text-decoration: underline;
+  color: #717ac8;
+  font-size: 1.3rem;
+  transition: transform 0.2s ease-in;
+}
+
+.title button:hover {
+  transform: translateY(-15%);
+}
+
+.position-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.position {
+  display: flex;
+  background-color: #fff;
+  padding: 1.8rem;
+  border-radius: 1em;
+  font-size: 1.3rem;
+  justify-content: space-between;
+  transition: all 0.1s ease-in;
+}
+
+.position:hover {
+  scale: calc(1.05);
+  box-shadow: 0px 3px 10px #cfdbfc;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h2 {
+  width: 35%;
+}
+
+.drop {
+  width: 55%;
+  display: flex;
+  justify-content: space-around;
+}
+
+p {
+  width: 50%;
+}
+
+.position button {
+  width: 5%;
+  position: relative;
+  font-size: 1.6rem;
+  color: #8e8f9b;
+}
+
+@media (max-width: 600px) {
+  .position {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .drop {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .drop p {
+    margin-top: 0.5rem;
+    width: 50%;
+  }
+
+  .position button {
+    content-visibility: hidden;
+  }
+}

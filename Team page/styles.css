@@ -1,0 +1,32 @@
+.newCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #a1aed2;
+  margin: 0;
+}
+
+.newCard,
+.card {
+  transition: all 0.15s ease-in;
+}
+
+.newCard:hover,
+.card:hover {
+  cursor: pointer;
+  scale: calc(105%);
+  box-shadow: 6px 6px 10px #0d1224;
+}
+
+.testClass {
+  background-color: red;
+}
+
+.addCard {
+  transition: all 0.15s ease-in;
+}
+
+.addCard:hover {
+  scale: calc(110%);
+}

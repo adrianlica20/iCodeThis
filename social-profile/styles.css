@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f7fe;
+}
+
+.social-card {
+  width: 33rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 2.5rem;
+  box-shadow: 3px 3px 10px rgb(233, 233, 233);
+}
+
+.avatar {
+  width: 5.5rem;
+  border-radius: 50%;
+}
+
+.btn-follow {
+  position: relative;
+  left: 18rem;
+  bottom: 2.2rem;
+  font-family: inherit;
+  padding: 0.7rem 1.8rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.2s ease-in;
+}
+
+.btn-follow:hover {
+  cursor: pointer;
+  scale: calc(1.2);
+  box-shadow: 3px 3px 15px rgb(155, 155, 155);
+}
+
+.unfollow {
+  background-color: rgb(224, 224, 224);
+  color: rgb(255, 0, 0);
+  border: 1px solid grey;
+  padding: 0.6rem 1.7rem;
+}
+
+.name {
+  margin-bottom: 0;
+}
+
+.username,
+.follow-container {
+  color: grey;
+}
+
+.position,
+.description {
+  max-width: 60%;
+}
+
+.position {
+  margin-bottom: 0;
+}
+
+.description {
+  margin-top: 0;
+}
+
+.follow-container {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}

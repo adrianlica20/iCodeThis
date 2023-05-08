@@ -1,0 +1,87 @@
+#success-container::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    #77e2a8 0deg 20deg,
+    #fff 20deg 30deg,
+    #77e2a8 30deg 70deg,
+    #fff 70deg 80deg,
+    #77e2a8 80deg 175deg,
+    #fff 175deg 185deg,
+    #77e2a8 185deg 270deg,
+    #fff 270deg 280deg,
+    #77e2a8 260deg 360deg
+  );
+  position: absolute;
+}
+
+#success-container::after {
+  content: '';
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+#failure-container::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    #f8a98f 0deg 20deg,
+    #fff 20deg 30deg,
+    #f8a98f 30deg 70deg,
+    #fff 70deg 80deg,
+    #f8a98f 80deg 175deg,
+    #fff 175deg 185deg,
+    #f8a98f 185deg 270deg,
+    #fff 270deg 280deg,
+    #f8a98f 260deg 360deg
+  );
+  position: absolute;
+}
+
+#failure-container::after {
+  content: '';
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+p {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: 3s typing 3.5s steps(40, end),
+    3s blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}

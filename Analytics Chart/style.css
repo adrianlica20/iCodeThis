@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+  font-size: 62.5%;
+  --clr-us: #5289cc;
+  --clr-ca: #3dc9c9;
+  --clr-au: #f5a623;
+  --clr-ch: #f55823;
+}
+
+*,
+*::before,
+*::after {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #e4e4e5;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+}
+
+#chart {
+  background-color: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: 5px 10px 15px rgba(145, 145, 145, 0.346);
+  display: flex;
+}
+
+.number-stops {
+  display: grid;
+  grid-template-rows: 5;
+  row-gap: 3.5rem;
+}
+
+#center-graph {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+#center-graph .horizontal-axis {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 5;
+  row-gap: 5rem;
+  position: absolute;
+}
+
+#center-graph .horizontal-axis .dotted-line {
+  width: 100%;
+  height: 1px;
+  background: repeating-linear-gradient(
+    90deg,
+    lightgrey,
+    lightgrey 7px,
+    white 7px,
+    white 20px
+  );
+}
+
+#center-graph .vertical-axis {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid lightgray;
+}
+
+.vertical-axis .column {
+  width: 1.5rem;
+  height: 11rem;
+  background-color: red;
+}

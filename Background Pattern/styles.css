@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom right, #71b755, #056469);
+  min-height: 100vh;
+}
+
+.pattern {
+  width: 1536px;
+  height: 982px;
+  background-image: radial-gradient(#56a891, 4px, transparent 4px),
+    linear-gradient(#37b24eb1 1px, transparent 1px),
+    linear-gradient(90deg, #37b24ea8 1px, transparent 1px);
+  background-size: 2rem 2rem;
+  background-position: 10% 21.4%, 0, 34.44%, 0%;
+  position: fixed;
+  overflow: hidden;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  background-color: #fefefe;
+  border-radius: 50%;
+}
+
+.dot:nth-of-type(1) {
+  top: 55px;
+  left: 34px;
+}
+
+.dot:nth-of-type(2) {
+  top: 248px;
+  left: 162px;
+}
+.dot:nth-of-type(3) {
+  top: 440px;
+  left: 290px;
+}
+.dot:nth-of-type(4) {
+  top: 23px;
+  left: 355px;
+}
+.dot:nth-of-type(5) {
+  top: 88px;
+  left: 578px;
+}
+.dot:nth-of-type(6) {
+  top: 279px;
+  left: 867px;
+}
+.dot:nth-of-type(7) {
+  top: 599px;
+  left: 1090px;
+}
+.dot:nth-of-type(8) {
+  bottom: 247px;
+  left: 99px;
+}
+.dot:nth-of-type(9) {
+  right: 310px;
+  top: 311px;
+}
+.dot:nth-of-type(10) {
+  top: 87px;
+  right: 213px;
+}
+.dot:nth-of-type(11) {
+  bottom: 407px;
+  right: 214px;
+}
+.dot:nth-of-type(12) {
+  bottom: 502px;
+  left: 514px;
+}
+.dot:nth-of-type(13) {
+  bottom: 470px;
+  left: 739px;
+}
+.dot:nth-of-type(14) {
+  bottom: 214px;
+  left: 610px;
+}
+.dot:nth-of-type(15) {
+  bottom: 214px;
+  right: 310px;
+}
