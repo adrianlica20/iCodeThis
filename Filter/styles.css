@@ -1,0 +1,42 @@
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+input[type='checkbox'] {
+  appearance: none;
+  height: 1.05rem;
+  width: 1.05rem;
+  background-color: transparent;
+  border: 1px solid #d3c8f5;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  flex-shrink: 0;
+}
+
+input[type='checkbox']::after {
+  content: '\2713';
+  font-size: 0.8rem;
+  rotate: 15deg;
+  display: none;
+}
+
+input[type='checkbox']:hover {
+  background-color: rgba(243, 243, 243, 0.493);
+}
+
+input[type='checkbox']:checked {
+  background-color: #7044f5;
+  border: 1px solid #7044f5;
+}
+
+input[type='checkbox']:checked::after {
+  display: block;
+  color: #fff;
+}
