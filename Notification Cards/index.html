@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-purple-50 text-slate-800 flex justify-center items-center min-h-screen p-2 sm:p-0">
+    <div
+        class="circle-one bg-[#efd7f8] hidden sm:block w-[300px] h-[300px] rounded-full absolute top-[42%] left-[60%] -translate-x-1/2 -translate-y-1/2 opacity-40 shadow-[0px_0px_5px_3px] shadow-[#efd7f8]">
+    </div>
+    <div
+        class="circle-two bg-[#efd7f8] hidden sm:block w-[350px] h-[350px] rounded-full absolute top-[50%] left-[40%] -translate-x-1/2 -translate-y-1/2 opacity-50 shadow-[0px_0px_5px_3px] shadow-[#efd7f8]">
+    </div>
+
+    <div class="space-y-4">
+        <div
+            class="popup bg-white p-3 py-9 z-10 rounded-lg overflow-hidden relative shadow-lg before:h-44 before:w-44 before:bg-green-50 before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-28 before:-z-10 before:rounded-full hover:before:transition-all hover:before:w-48 hover:before:h-48 hover:cursor-crosshair">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="bg-slate-100 rounded-full text-slate-500 p-1 absolute top-2 right-2 cursor-pointer transition hover:bg-slate-200 close-btn"
+                width="26" height="26" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M18 6l-12 12"></path>
+                <path d="M6 6l12 12"></path>
+            </svg>
+            <div class="flex gap-3 items-center">
+                <img width="40px" src="https://img.icons8.com/?size=512&id=63312&format=png" alt="">
+                <div class="space-y-1">
+                    <p class="font-bold text-xs">Thank you for subscribing!</p>
+                    <p class="text-[0.67rem]">You will receive an email to confirm your subscription.</p>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="popup bg-white p-3 py-9 z-10 rounded-lg overflow-hidden relative shadow-lg before:h-44 before:w-44 before:bg-red-50 before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-28 before:-z-10 before:rounded-full hover:before:transition-all hover:before:w-48 hover:before:h-48 hover:cursor-crosshair">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="bg-slate-100 rounded-full text-slate-500 p-1 absolute top-2 right-2 cursor-pointer transition hover:bg-slate-200 close-btn"
+                width="26" height="26" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M18 6l-12 12"></path>
+                <path d="M6 6l12 12"></path>
+            </svg>
+            <div class="flex gap-3 items-center">
+                <img width="40px" src="https://img.icons8.com/?size=512&id=63688&format=png" alt="">
+                <div class="space-y-1">
+                    <p class="font-bold text-xs">Oups! An error occured.</p>
+                    <p class="text-[0.67rem]">Appologies for the inconvenience. Please try again.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
